@@ -3,8 +3,6 @@
 [![NPM Downloads][downloads-image]][downloads-url]
 [![NPM Version][version-image]][version-url]
 [![License][license-image]][license-url]
-[![Dependency Status][dependency-image]][dependency-url]
-[![devDependency Status][devdependency-image]][devdependency-url]
 [![Code Style][style-image]][style-url]
 
 > GitHub Pages Storage Adapter for Ghost
@@ -113,14 +111,10 @@ change configs will not affect images that already uploaded.
 
 
 [downloads-image]: https://img.shields.io/npm/dm/pages-store.svg
-[downloads-url]: https://npmjs.org/package/pages-store
-[version-image]: https://img.shields.io/npm/v/pages-store.svg
-[version-url]: https://npmjs.org/package/pages-store
+[downloads-url]: https://npmjs.org/package/ghost-github-storage
+[version-image]: https://img.shields.io/npm/v/ghost-github-storage.svg
+[version-url]: https://npmjs.org/package/ghost-github-storage
 [license-image]: https://img.shields.io/github/license/wangkezun/ghost-github-storage.svg
 [license-url]: https://github.com/wangkezun/ghost-github-storage/blob/master/LICENSE
-[dependency-image]: https://img.shields.io/david/zce/pages-store.svg
-[dependency-url]: https://david-dm.org/zce/pages-store
-[devdependency-image]: https://img.shields.io/david/dev/zce/pages-store.svg
-[devdependency-url]: https://david-dm.org/zce/pages-store?type=dev
 [style-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [style-url]: http://standardjs.com
