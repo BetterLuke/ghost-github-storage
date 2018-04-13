@@ -1,6 +1,6 @@
 {
   "name": "ghost-github-storage",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "GitHub Storage Adapter for Ghost Blog",
   "keywords": [
     "zce"
