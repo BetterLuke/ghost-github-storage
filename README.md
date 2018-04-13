@@ -113,8 +113,8 @@ You can use URL authentication:
 [downloads-url]: https://npmjs.org/package/pages-store
 [version-image]: https://img.shields.io/npm/v/pages-store.svg
 [version-url]: https://npmjs.org/package/pages-store
-[license-image]: https://img.shields.io/npm/l/pages-store.svg
-[license-url]: https://github.com/zce/pages-store/blob/master/LICENSE
+[license-image]: https://img.shields.io/github/license/wangkezun/ghost-github-storage.svg
+[license-url]: https://github.com/wangkezun/ghost-github-storage/blob/master/LICENSE
 [dependency-image]: https://img.shields.io/david/zce/pages-store.svg
 [dependency-url]: https://david-dm.org/zce/pages-store
 [devdependency-image]: https://img.shields.io/david/dev/zce/pages-store.svg

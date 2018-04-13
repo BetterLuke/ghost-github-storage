@@ -1,16 +1,16 @@
 {
-  "name": "pages-store",
-  "version": "0.2.2",
-  "description": "GitHub Pages Storage Adapter for Ghost",
+  "name": "ghost-github-storage",
+  "version": "0.0.1",
+  "description": "GitHub Storage Adapter for Ghost Blog",
   "keywords": [
     "zce"
   ],
-  "homepage": "https://github.com/zce/pages-store#readme",
+  "homepage": "https://github.com/wangkezun/ghost-github-storage#readme",
   "bugs": {
-    "url": "https://github.com/zce/pages-store/issues"
+    "url": "https://github.com/wangkezun/ghost-github-storage/issues"
   },
   "license": "MIT",
-  "author": "zce <w@zce.me> (https://zce.me/)",
+  "author": "wangkezun@gmail.com",
   "files": [
     "lib"
   ],
@@ -20,16 +20,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zce/pages-store.git"
+    "url": "git+https://github.com/wangkezun/ghost-github-storage.git"
   },
   "scripts": {
     "lint": "standard --fix"
   },
   "dependencies": {
     "fs-extra": "^5.0.0",
-    "gh-pages": "^1.1.0",
     "ghost-storage-base": "^0.0.1",
-    "uuid": "^3.1.0"
+    "uuid": "^3.1.0",
+    "@octokit/rest": "^15.2.6"
   },
   "devDependencies": {
     "standard": "^10.0.3"
