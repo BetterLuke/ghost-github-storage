@@ -1,9 +1,12 @@
 {
   "name": "ghost-github-storage",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "GitHub Storage Adapter for Ghost Blog",
   "keywords": [
-    "zce"
+    "wangkezun",
+    "ghost",
+    "storage",
+    "adapter"
   ],
   "homepage": "https://github.com/wangkezun/ghost-github-storage#readme",
   "bugs": {
