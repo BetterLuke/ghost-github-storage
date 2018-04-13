@@ -16,9 +16,9 @@
 - Install pages-store module
 
   ```shell
-  yarn add pages-store
+  yarn add ghost-github-storage
   # or npm
-  npm install pages-store
+  npm install ghost-github-storage
   ```
 - Make the storage folder if it doesn't exist yet
 
@@ -28,7 +28,7 @@
 - Copy the module into the right location
 
   ```shell
-  cp -vR node_modules/pages-store content/adapters/storage/pages-store
+  cp -vR node_modules/ghost-github-storage content/adapters/storage/pages-store
   ```
 
 ### Via Git
@@ -41,13 +41,13 @@ In order to replace the storage module, the basic requirements are:
 
   ```shell
   cd [path/to/ghost]/content/adapters/storage
-  git clone https://github.com/zce/pages-store.git
+  git clone https://github.com/wangkezun/ghost-github-storage.git
   ```
 
 - Install dependencies
 
   ```shell
-  cd pages-store
+  cd ghost-github-storage
   yarn
   # or
   npm install
@@ -60,10 +60,11 @@ In your `config.[env].json` file, you'll need to add a new `storage` block to wh
 ```json
 {
   "storage": {
-    "active": "pages-store",
-    "pages-store": {
-      "prefix": "http://zce.github.io/storage",
-      "repo": "zce/storage"
+    "active": "ghost-github-storage",
+    "ghost-github-storage": {
+      "token": "YOUR_GITHUB_TOKEN",
+      "repo": "REPO_NAME",
+      "owner": "YOUR_GITHUB_USER_NAME"
     }
   }
 }
@@ -74,23 +75,15 @@ In your `config.[env].json` file, you'll need to add a new `storage` block to wh
 ```json
 {
   "storage": {
-    "active": "pages-store",
-    "pages-store": {
-      "repo": "https://git.coding.net/zce/images.git",
-      "branch": "master",
-      "prefix": "https://img.zce.me",
+    "active": "ghost-github-storage",
+    "ghost-github-storage": {
+      "branch": "gh-pages",
+      "prefix": "https://wangkezun.github.io/ghost-assets",
       "format": "{yyyy}/{mm}/{dd}/{name}-{uuid}-{timestamp}-{random}{ext}"
     }
   }
 }
 ```
-
-### Authorization
-
-You can use URL authentication:
-
-- `https://<TOKEN>@github.com/zce/images.git`
-- `https://wedn:<TOKEN>@git.coding.net/wedn/images.git`
 
 ## Contributing
 
@@ -105,7 +98,7 @@ You can use URL authentication:
 
 ## License
 
-[MIT](LICENSE) &copy; [汪磊](https://zce.me/)
+[MIT](LICENSE) &copy; [wangkezun](https://wkz.io)
 
 
 
