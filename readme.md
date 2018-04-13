@@ -69,6 +69,11 @@ In your `config.[env].json` file, you'll need to add a new `storage` block to wh
   }
 }
 ```
+Adapter will check the repo existence and create a new repo if not exist and check branch existence and checkout a new branch if not exist
+
+Use gh-pages as branch name and leave prefix blank is recommended for github will automatic publish image to github.io
+
+change configs will not affect images that already uploaded.
 
 ### Options
 
@@ -77,8 +82,8 @@ In your `config.[env].json` file, you'll need to add a new `storage` block to wh
   "storage": {
     "active": "ghost-github-storage",
     "ghost-github-storage": {
-      "branch": "gh-pages",
-      "prefix": "https://wangkezun.github.io/ghost-assets",
+      "branch": "gh-pages", // using default is recommended
+      "prefix": "https://wangkezun.github.io/ghost-assets", // by default adapter will generate this prefix
       "format": "{yyyy}/{mm}/{dd}/{name}-{uuid}-{timestamp}-{random}{ext}"
     }
   }
@@ -99,6 +104,11 @@ In your `config.[env].json` file, you'll need to add a new `storage` block to wh
 ## License
 
 [MIT](LICENSE) &copy; [wangkezun](https://wkz.io)
+
+## Forked from [pages-store](https://github.com/zce/pages-store)
+
+### origin repo depends on [gh-pages](https://www.npmjs.com/package/gh-pages) which commit every thing in images folder to github. It's very slow and unsafe.
+### this repo depends on [@octokit/rest](https://github.com/octokit/rest.js) which can commit one file a time, makes the upload much faster than origin adapter.
 
 
 
