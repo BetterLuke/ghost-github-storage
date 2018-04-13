@@ -28,7 +28,7 @@
 - Copy the module into the right location
 
   ```shell
-  cp -vR node_modules/ghost-github-storage content/adapters/storage/pages-store
+  cp -vR node_modules/ghost-github-storage content/adapters/storage/ghost-github-storage
   ```
 
 ### Via Git
